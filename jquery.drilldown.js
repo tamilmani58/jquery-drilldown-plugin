@@ -94,7 +94,9 @@
 			});
 			
 			$(".drillItem").live('click',function(event){
+				if(options.callBack!==null)	{
 				return options['callBack']($(this).attr("data"));
+				}
 			});			
 		}		
 })(jQuery);
